@@ -1,0 +1,656 @@
+{
+  "metadata": {
+    "schemaVersion": 1,
+    "effectiveFrom": "2026-03-14",
+    "checkedAt": "2026-07-19",
+    "officialSearchUrl": "https://www.jrhokkaido.co.jp/global/",
+    "operationInfoUrl": "https://www3.jrhokkaido.co.jp/trainlocation/",
+    "sourceNote": "JR北海道公式の時刻・運賃検索で対象区間を確認。検索結果は旅行前に再確認してください。"
+  },
+  "services": [
+    {
+      "id": "ozora-1",
+      "name": "おおぞら",
+      "number": 1,
+      "direction": "eastbound",
+      "stops": [
+        {
+          "station": "sapporo",
+          "label": "札幌",
+          "arrival": null,
+          "departure": "06:48"
+        },
+        {
+          "station": "shin_sapporo",
+          "label": "新札幌",
+          "arrival": null,
+          "departure": "06:56"
+        },
+        {
+          "station": "obihiro",
+          "label": "帯広",
+          "arrival": "09:18",
+          "departure": "09:19"
+        },
+        {
+          "station": "kushiro",
+          "label": "釧路",
+          "arrival": "10:56",
+          "departure": null
+        }
+      ]
+    },
+    {
+      "id": "tokachi-1",
+      "name": "とかち",
+      "number": 1,
+      "direction": "eastbound",
+      "stops": [
+        {
+          "station": "sapporo",
+          "label": "札幌",
+          "arrival": null,
+          "departure": "07:58"
+        },
+        {
+          "station": "shin_sapporo",
+          "label": "新札幌",
+          "arrival": null,
+          "departure": "08:07"
+        },
+        {
+          "station": "obihiro",
+          "label": "帯広",
+          "arrival": "10:43",
+          "departure": null
+        }
+      ]
+    },
+    {
+      "id": "ozora-3",
+      "name": "おおぞら",
+      "number": 3,
+      "direction": "eastbound",
+      "stops": [
+        {
+          "station": "sapporo",
+          "label": "札幌",
+          "arrival": null,
+          "departure": "08:52"
+        },
+        {
+          "station": "shin_sapporo",
+          "label": "新札幌",
+          "arrival": null,
+          "departure": "09:01"
+        },
+        {
+          "station": "obihiro",
+          "label": "帯広",
+          "arrival": "11:42",
+          "departure": "11:43"
+        },
+        {
+          "station": "kushiro",
+          "label": "釧路",
+          "arrival": "13:20",
+          "departure": null
+        }
+      ]
+    },
+    {
+      "id": "tokachi-3",
+      "name": "とかち",
+      "number": 3,
+      "direction": "eastbound",
+      "stops": [
+        {
+          "station": "sapporo",
+          "label": "札幌",
+          "arrival": null,
+          "departure": "10:45"
+        },
+        {
+          "station": "shin_sapporo",
+          "label": "新札幌",
+          "arrival": null,
+          "departure": "10:54"
+        },
+        {
+          "station": "obihiro",
+          "label": "帯広",
+          "arrival": "13:27",
+          "departure": null
+        }
+      ]
+    },
+    {
+      "id": "ozora-5",
+      "name": "おおぞら",
+      "number": 5,
+      "direction": "eastbound",
+      "stops": [
+        {
+          "station": "sapporo",
+          "label": "札幌",
+          "arrival": null,
+          "departure": "11:46"
+        },
+        {
+          "station": "shin_sapporo",
+          "label": "新札幌",
+          "arrival": null,
+          "departure": "11:54"
+        },
+        {
+          "station": "obihiro",
+          "label": "帯広",
+          "arrival": "14:16",
+          "departure": "14:17"
+        },
+        {
+          "station": "kushiro",
+          "label": "釧路",
+          "arrival": "15:50",
+          "departure": null
+        }
+      ]
+    },
+    {
+      "id": "ozora-7",
+      "name": "おおぞら",
+      "number": 7,
+      "direction": "eastbound",
+      "stops": [
+        {
+          "station": "sapporo",
+          "label": "札幌",
+          "arrival": null,
+          "departure": "13:57"
+        },
+        {
+          "station": "shin_sapporo",
+          "label": "新札幌",
+          "arrival": null,
+          "departure": "14:05"
+        },
+        {
+          "station": "obihiro",
+          "label": "帯広",
+          "arrival": "16:18",
+          "departure": "16:19"
+        },
+        {
+          "station": "kushiro",
+          "label": "釧路",
+          "arrival": "17:51",
+          "departure": null
+        }
+      ]
+    },
+    {
+      "id": "tokachi-5",
+      "name": "とかち",
+      "number": 5,
+      "direction": "eastbound",
+      "stops": [
+        {
+          "station": "sapporo",
+          "label": "札幌",
+          "arrival": null,
+          "departure": "15:51"
+        },
+        {
+          "station": "shin_sapporo",
+          "label": "新札幌",
+          "arrival": null,
+          "departure": "16:00"
+        },
+        {
+          "station": "obihiro",
+          "label": "帯広",
+          "arrival": "18:39",
+          "departure": null
+        }
+      ]
+    },
+    {
+      "id": "ozora-9",
+      "name": "おおぞら",
+      "number": 9,
+      "direction": "eastbound",
+      "stops": [
+        {
+          "station": "sapporo",
+          "label": "札幌",
+          "arrival": null,
+          "departure": "17:26"
+        },
+        {
+          "station": "shin_sapporo",
+          "label": "新札幌",
+          "arrival": null,
+          "departure": "17:35"
+        },
+        {
+          "station": "obihiro",
+          "label": "帯広",
+          "arrival": "20:06",
+          "departure": "20:07"
+        },
+        {
+          "station": "kushiro",
+          "label": "釧路",
+          "arrival": "21:50",
+          "departure": null
+        }
+      ]
+    },
+    {
+      "id": "tokachi-7",
+      "name": "とかち",
+      "number": 7,
+      "direction": "eastbound",
+      "stops": [
+        {
+          "station": "sapporo",
+          "label": "札幌",
+          "arrival": null,
+          "departure": "18:40"
+        },
+        {
+          "station": "shin_sapporo",
+          "label": "新札幌",
+          "arrival": null,
+          "departure": "18:49"
+        },
+        {
+          "station": "obihiro",
+          "label": "帯広",
+          "arrival": "21:21",
+          "departure": null
+        }
+      ]
+    },
+    {
+      "id": "ozora-11",
+      "name": "おおぞら",
+      "number": 11,
+      "direction": "eastbound",
+      "stops": [
+        {
+          "station": "sapporo",
+          "label": "札幌",
+          "arrival": null,
+          "departure": "19:39"
+        },
+        {
+          "station": "shin_sapporo",
+          "label": "新札幌",
+          "arrival": null,
+          "departure": "19:48"
+        },
+        {
+          "station": "obihiro",
+          "label": "帯広",
+          "arrival": "22:17",
+          "departure": "22:18"
+        },
+        {
+          "station": "kushiro",
+          "label": "釧路",
+          "arrival": "23:51",
+          "departure": null
+        }
+      ]
+    },
+    {
+      "id": "tokachi-9",
+      "name": "とかち",
+      "number": 9,
+      "direction": "eastbound",
+      "stops": [
+        {
+          "station": "sapporo",
+          "label": "札幌",
+          "arrival": null,
+          "departure": "21:09"
+        },
+        {
+          "station": "shin_sapporo",
+          "label": "新札幌",
+          "arrival": null,
+          "departure": "21:17"
+        },
+        {
+          "station": "obihiro",
+          "label": "帯広",
+          "arrival": "23:46",
+          "departure": null
+        }
+      ]
+    },
+    {
+      "id": "tokachi-2",
+      "name": "とかち",
+      "number": 2,
+      "direction": "westbound",
+      "stops": [
+        {
+          "station": "sapporo",
+          "label": "札幌",
+          "arrival": "09:34",
+          "departure": null
+        },
+        {
+          "station": "shin_sapporo",
+          "label": "新札幌",
+          "arrival": "09:25",
+          "departure": null
+        },
+        {
+          "station": "obihiro",
+          "label": "帯広",
+          "arrival": null,
+          "departure": "06:45"
+        }
+      ]
+    },
+    {
+      "id": "ozora-2",
+      "name": "おおぞら",
+      "number": 2,
+      "direction": "westbound",
+      "stops": [
+        {
+          "station": "sapporo",
+          "label": "札幌",
+          "arrival": "10:41",
+          "departure": null
+        },
+        {
+          "station": "shin_sapporo",
+          "label": "新札幌",
+          "arrival": "10:33",
+          "departure": null
+        },
+        {
+          "station": "obihiro",
+          "label": "帯広",
+          "arrival": "07:52",
+          "departure": "07:54"
+        },
+        {
+          "station": "kushiro",
+          "label": "釧路",
+          "arrival": null,
+          "departure": "06:18"
+        }
+      ]
+    },
+    {
+      "id": "tokachi-4",
+      "name": "とかち",
+      "number": 4,
+      "direction": "westbound",
+      "stops": [
+        {
+          "station": "sapporo",
+          "label": "札幌",
+          "arrival": "11:40",
+          "departure": null
+        },
+        {
+          "station": "shin_sapporo",
+          "label": "新札幌",
+          "arrival": "11:31",
+          "departure": null
+        },
+        {
+          "station": "obihiro",
+          "label": "帯広",
+          "arrival": null,
+          "departure": "08:42"
+        }
+      ]
+    },
+    {
+      "id": "ozora-4",
+      "name": "おおぞら",
+      "number": 4,
+      "direction": "westbound",
+      "stops": [
+        {
+          "station": "sapporo",
+          "label": "札幌",
+          "arrival": "12:29",
+          "departure": null
+        },
+        {
+          "station": "shin_sapporo",
+          "label": "新札幌",
+          "arrival": "12:20",
+          "departure": null
+        },
+        {
+          "station": "obihiro",
+          "label": "帯広",
+          "arrival": "10:03",
+          "departure": "10:05"
+        },
+        {
+          "station": "kushiro",
+          "label": "釧路",
+          "arrival": null,
+          "departure": "08:32"
+        }
+      ]
+    },
+    {
+      "id": "tokachi-6",
+      "name": "とかち",
+      "number": 6,
+      "direction": "westbound",
+      "stops": [
+        {
+          "station": "sapporo",
+          "label": "札幌",
+          "arrival": "14:10",
+          "departure": null
+        },
+        {
+          "station": "shin_sapporo",
+          "label": "新札幌",
+          "arrival": "14:01",
+          "departure": null
+        },
+        {
+          "station": "obihiro",
+          "label": "帯広",
+          "arrival": null,
+          "departure": "11:12"
+        }
+      ]
+    },
+    {
+      "id": "ozora-6",
+      "name": "おおぞら",
+      "number": 6,
+      "direction": "westbound",
+      "stops": [
+        {
+          "station": "sapporo",
+          "label": "札幌",
+          "arrival": "15:41",
+          "departure": null
+        },
+        {
+          "station": "shin_sapporo",
+          "label": "新札幌",
+          "arrival": "15:32",
+          "departure": null
+        },
+        {
+          "station": "obihiro",
+          "label": "帯広",
+          "arrival": "12:56",
+          "departure": "12:58"
+        },
+        {
+          "station": "kushiro",
+          "label": "釧路",
+          "arrival": null,
+          "departure": "11:21"
+        }
+      ]
+    },
+    {
+      "id": "tokachi-8",
+      "name": "とかち",
+      "number": 8,
+      "direction": "westbound",
+      "stops": [
+        {
+          "station": "sapporo",
+          "label": "札幌",
+          "arrival": "16:40",
+          "departure": null
+        },
+        {
+          "station": "shin_sapporo",
+          "label": "新札幌",
+          "arrival": "16:31",
+          "departure": null
+        },
+        {
+          "station": "obihiro",
+          "label": "帯広",
+          "arrival": null,
+          "departure": "13:46"
+        }
+      ]
+    },
+    {
+      "id": "ozora-8",
+      "name": "おおぞら",
+      "number": 8,
+      "direction": "westbound",
+      "stops": [
+        {
+          "station": "sapporo",
+          "label": "札幌",
+          "arrival": "18:16",
+          "departure": null
+        },
+        {
+          "station": "shin_sapporo",
+          "label": "新札幌",
+          "arrival": "18:07",
+          "departure": null
+        },
+        {
+          "station": "obihiro",
+          "label": "帯広",
+          "arrival": "15:36",
+          "departure": "15:37"
+        },
+        {
+          "station": "kushiro",
+          "label": "釧路",
+          "arrival": null,
+          "departure": "13:56"
+        }
+      ]
+    },
+    {
+      "id": "ozora-10",
+      "name": "おおぞら",
+      "number": 10,
+      "direction": "westbound",
+      "stops": [
+        {
+          "station": "sapporo",
+          "label": "札幌",
+          "arrival": "20:29",
+          "departure": null
+        },
+        {
+          "station": "shin_sapporo",
+          "label": "新札幌",
+          "arrival": "20:19",
+          "departure": null
+        },
+        {
+          "station": "obihiro",
+          "label": "帯広",
+          "arrival": "17:50",
+          "departure": "17:51"
+        },
+        {
+          "station": "kushiro",
+          "label": "釧路",
+          "arrival": null,
+          "departure": "16:12"
+        }
+      ]
+    },
+    {
+      "id": "tokachi-10",
+      "name": "とかち",
+      "number": 10,
+      "direction": "westbound",
+      "stops": [
+        {
+          "station": "sapporo",
+          "label": "札幌",
+          "arrival": "22:05",
+          "departure": null
+        },
+        {
+          "station": "shin_sapporo",
+          "label": "新札幌",
+          "arrival": "21:56",
+          "departure": null
+        },
+        {
+          "station": "obihiro",
+          "label": "帯広",
+          "arrival": null,
+          "departure": "19:15"
+        }
+      ]
+    },
+    {
+      "id": "ozora-12",
+      "name": "おおぞら",
+      "number": 12,
+      "direction": "westbound",
+      "stops": [
+        {
+          "station": "sapporo",
+          "label": "札幌",
+          "arrival": "22:59",
+          "departure": null
+        },
+        {
+          "station": "shin_sapporo",
+          "label": "新札幌",
+          "arrival": "22:49",
+          "departure": null
+        },
+        {
+          "station": "obihiro",
+          "label": "帯広",
+          "arrival": "20:32",
+          "departure": "20:34"
+        },
+        {
+          "station": "kushiro",
+          "label": "釧路",
+          "arrival": null,
+          "departure": "19:00"
+        }
+      ]
+    }
+  ]
+}

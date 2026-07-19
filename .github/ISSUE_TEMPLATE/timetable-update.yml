@@ -1,0 +1,43 @@
+name: ダイヤ更新
+description: おおぞら・とかちの時刻表を更新する
+title: "[ダイヤ更新] "
+labels: ["timetable-update"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        最初に `docs/TIMETABLE_UPDATE.md` を開いてください。公式確認先、CSV入力例、検査、公開、戻し方がすべて記載されています。
+  - type: input
+    id: effective_from
+    attributes:
+      label: 新ダイヤ適用日
+      description: YYYY-MM-DD
+      placeholder: "2027-03-13"
+    validations:
+      required: true
+  - type: input
+    id: announcement
+    attributes:
+      label: JR北海道の公式発表URL
+    validations:
+      required: true
+  - type: checkboxes
+    id: routes
+    attributes:
+      label: 公式時刻の確認対象
+      options:
+        - label: 札幌・新札幌 → 帯広・釧路を確認した
+          required: true
+        - label: 帯広・釧路 → 新札幌・札幌を確認した
+          required: true
+        - label: おおぞら・とかちを両方確認した
+          required: true
+        - label: 改正日以後の日付で検索した
+          required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: 臨時列車・運休日・その他の注意
+      description: なければ「なし」
+    validations:
+      required: true
