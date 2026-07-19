@@ -339,8 +339,8 @@ export default function App() {
   const [inboundStations, setInboundStations] = useState<{ origin: StationId; destination: StationId } | null>(null)
   const [departureDate, setDepartureDate] = useState(dateForInput())
   const [returnDate, setReturnDate] = useState(dateForInput(1))
-  const [outbound, setOutbound] = useState<LegSelection>({ period: "ALL", serviceId: "", preference: { ...defaultPreference } })
-  const [inbound, setInbound] = useState<LegSelection>({ period: "ALL", serviceId: "", preference: { ...defaultPreference } })
+  const [outbound, setOutbound] = useState<LegSelection>({ period: "AM", serviceId: "", preference: { ...defaultPreference } })
+  const [inbound, setInbound] = useState<LegSelection>({ period: "PM", serviceId: "", preference: { ...defaultPreference } })
   const [copied, setCopied] = useState(false)
 
   const inboundOrigin = inboundStations?.origin ?? outboundDestination
