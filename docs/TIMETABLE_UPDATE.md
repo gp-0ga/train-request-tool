@@ -12,6 +12,10 @@
 
 新しい時刻を公式サイトで確認してCSVへ入力する部分だけは人が行います。公式検索結果の自動取得・転載は行いません。
 
+### 通知の模擬テスト
+
+`Monitor JR Hokkaido timetable revision` Actionを手動実行し、`simulation`をオンにすると、`[模擬通知テスト] ダイヤ更新確認` Issueを作成します。実際のJR北海道サイトにはアクセスせず、時刻表データも変更しません。GitHub・メール・GitHub Mobileの通知経路を確認したら、模擬Issueを閉じてください。
+
 ## 1. 必ず開く公式ページ
 
 - [JR北海道 時刻・運賃検索](https://www.jrhokkaido.co.jp/global/)

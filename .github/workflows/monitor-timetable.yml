@@ -4,6 +4,12 @@ on:
   schedule:
     - cron: "17 0 * * 1"
   workflow_dispatch:
+    inputs:
+      simulation:
+        description: "模擬ダイヤ改正を検知して通知Issueを作成する"
+        required: false
+        type: boolean
+        default: false
 
 permissions:
   contents: read
@@ -18,7 +24,11 @@ jobs:
         with:
           node-version: 22
       - name: Scan official news releases
+        if: ${{ !inputs.simulation }}
         run: node scripts/scan-jr-news.mjs > timetable-news.json
+      - name: Generate simulated announcement
+        if: ${{ inputs.simulation }}
+        run: node scripts/scan-jr-news.mjs --simulate > timetable-news.json
       - name: Create issues for new announcements
         uses: actions/github-script@v8
         with:
@@ -38,28 +48,44 @@ jobs:
               })
             }
             for (const announcement of announcements) {
+              const isSimulation = announcement.simulation === true
               const query = `repo:${context.repo.owner}/${context.repo.repo} label:timetable-update in:body "${announcement.url}"`
               const existing = await github.rest.search.issuesAndPullRequests({ q: query, per_page: 1 })
               if (existing.data.total_count > 0) continue
+              const body = isSimulation
+                ? [
+                    'これはダイヤ改正通知の受信経路を確認するための模擬Issueです。',
+                    '**実際のダイヤ改正ではなく、時刻表データの更新も不要です。**',
+                    '',
+                    `- 模擬実行: ${announcement.url}`,
+                    `- 確認元: ${announcement.checkedPage}`,
+                    '',
+                    '## 確認すること',
+                    '',
+                    '- [ ] GitHubの通知一覧に届いた',
+                    '- [ ] 設定している場合はメールまたはGitHub Mobileにも届いた',
+                    '- [ ] 確認後にこのIssueを閉じる',
+                  ]
+                : [
+                    'JR北海道のニュースリリースで次回ダイヤ改正の発表を検知しました。',
+                    '',
+                    `- 公式発表: ${announcement.url}`,
+                    `- 監視ページ: ${announcement.checkedPage}`,
+                    '',
+                    '## 次に行うこと',
+                    '',
+                    '- [ ] `docs/TIMETABLE_UPDATE.md` を開く',
+                    '- [ ] 改正日以後の日付で公式時刻を確認する',
+                    '- [ ] `data/timetable-source.csv` を更新ブランチで編集する',
+                    '- [ ] `data/timetable-metadata.json` の適用日・確認日を更新する',
+                    '- [ ] 自動生成・検査が緑になることを確認する',
+                    '- [ ] 代表4区間を目視確認してからマージする',
+                  ]
               await github.rest.issues.create({
                 owner: context.repo.owner,
                 repo: context.repo.repo,
-                title: `[ダイヤ更新確認] ${announcement.title}`,
+                title: isSimulation ? '[模擬通知テスト] ダイヤ更新確認' : `[ダイヤ更新確認] ${announcement.title}`,
                 labels: ['timetable-update'],
-                body: [
-                  'JR北海道のニュースリリースで次回ダイヤ改正の発表を検知しました。',
-                  '',
-                  `- 公式発表: ${announcement.url}`,
-                  `- 監視ページ: ${announcement.checkedPage}`,
-                  '',
-                  '## 次に行うこと',
-                  '',
-                  '- [ ] `docs/TIMETABLE_UPDATE.md` を開く',
-                  '- [ ] 改正日以後の日付で公式時刻を確認する',
-                  '- [ ] `data/timetable-source.csv` を更新ブランチで編集する',
-                  '- [ ] `data/timetable-metadata.json` の適用日・確認日を更新する',
-                  '- [ ] 自動生成・検査が緑になることを確認する',
-                  '- [ ] 代表4区間を目視確認してからマージする',
-                ].join('\n'),
+                body: body.join('\n'),
               })
             }
