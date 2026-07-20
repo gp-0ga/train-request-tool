@@ -8,6 +8,19 @@ const targetYear = parts.month >= 4 ? parts.year + 1 : parts.year
 const fiscalYear = targetYear - 1
 const pageUrl = `https://www.jrhokkaido.co.jp/CM/Info/press/${fiscalYear}.html`
 
+if (process.argv.includes("--simulate")) {
+  const repository = process.env.GITHUB_REPOSITORY ?? "gp-0ga/train-request-tool"
+  const runId = process.env.GITHUB_RUN_ID ?? `local-${Date.now()}`
+  console.log(JSON.stringify([{
+    title: `[模擬] ${targetYear}年3月ダイヤ改正`,
+    url: `https://github.com/${repository}/actions/runs/${runId}`,
+    targetYear,
+    checkedPage: "模擬データ（JR北海道公式サイトにはアクセスしていません）",
+    simulation: true,
+  }], null, 2))
+  process.exit(0)
+}
+
 function normalize(text) {
   return text
     .replace(/<[^>]+>/g, " ")
