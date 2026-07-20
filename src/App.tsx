@@ -494,7 +494,7 @@ export default function App() {
             <CardHeader><CardTitle>メッセージプレビュー</CardTitle></CardHeader>
             <CardContent className="lg:flex lg:flex-1 lg:flex-col">
               <pre className="min-h-80 flex-1 whitespace-pre-wrap rounded-lg bg-muted p-4 font-sans text-sm leading-relaxed text-foreground lg:text-base">{message}</pre>
-              <p className="mt-3 text-xs text-muted-foreground">旅行前に公式時刻・運行情報も確認してください。</p>
+              <p className="mt-3 text-xs text-muted-foreground">ご乗車前に、JR北海道公式サイトで最新の時刻・運行情報をご確認ください。</p>
               <div className="mt-4 hidden gap-2 lg:flex">{actionButtons}</div>
             </CardContent>
           </Card>
