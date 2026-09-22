@@ -6,6 +6,7 @@ import {
   Copy,
   ExternalLink,
   Info,
+  Plane,
   Plus,
   TrainFront,
   X,
@@ -419,9 +420,30 @@ export default function App() {
   return (
     <div className="min-h-dvh bg-gradient-to-b from-teal-50 to-background pb-24 lg:pb-8">
       <header className="border-b bg-white/90 backdrop-blur">
-        <div className="mx-auto flex max-w-6xl items-center justify-center gap-3 px-4 py-4 text-center">
-          <TrainFront className="size-5 shrink-0 text-teal-700 lg:size-6" />
-          <h1 className="text-lg font-bold lg:text-2xl">JR特急予約依頼メッセージ作成ツール</h1>
+        <div className="mx-auto max-w-6xl px-4 py-4 text-center">
+          <div className="flex items-center justify-center gap-3">
+            <TrainFront className="size-5 shrink-0 text-teal-700 lg:size-6" />
+            <h1 className="text-lg font-bold lg:text-2xl">JR特急予約依頼メッセージ作成ツール</h1>
+          </div>
+          <nav
+            aria-label="交通手段の切り替え"
+            className="bg-muted mx-auto mt-3 grid max-w-sm grid-cols-2 rounded-lg p-1"
+          >
+            <a
+              href="https://gp-0ga.github.io/flight-request-tool/"
+              className="text-muted-foreground hover:text-foreground flex h-9 items-center justify-center gap-2 rounded-md text-sm font-semibold transition-colors lg:text-base"
+            >
+              <Plane className="size-4" />
+              航空券
+            </a>
+            <span
+              aria-current="page"
+              className="bg-background flex h-9 items-center justify-center gap-2 rounded-md text-sm font-semibold shadow-sm lg:text-base"
+            >
+              <TrainFront className="size-4" />
+              JR特急
+            </span>
+          </nav>
         </div>
       </header>
 
