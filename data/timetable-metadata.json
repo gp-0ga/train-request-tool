@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "effectiveFrom": "2026-03-14",
-  "checkedAt": "2026-07-19",
-  "officialSearchUrl": "https://www.jrhokkaido.co.jp/global/",
+  "checkedAt": "2026-09-22",
+  "officialSearchUrl": "https://jrhokkaidonorikae.com/ekihatsu/ekihatsu.php?node=%E6%9C%AD%E5%B9%8C&linename=%EF%BC%AA%EF%BC%B2%E5%8D%83%E6%AD%B3%E7%B7%9A&directionname=%E5%8D%83%E6%AD%B3%E3%83%BB%E6%96%B0%E5%8D%83%E6%AD%B3%E7%A9%BA%E6%B8%AF&next_node_id=4213",
   "operationInfoUrl": "https://www3.jrhokkaido.co.jp/trainlocation/",
-  "sourceNote": "JR北海道公式の時刻・運賃検索で対象区間を確認。検索結果は旅行前に再確認してください。"
+  "sourceNote": "JR北海道公式の駅発時刻表（JR時刻表2026年9月号準拠）で札幌・新札幌・帯広の対象列車を確認。乗車前に公式時刻・運行情報を再確認してください。"
 }
